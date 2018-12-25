@@ -388,84 +388,35 @@
 </b></p>
 
 
-<script nonce="" type="text/javascript">
+<div class="rich_media_tool" id="js_toobar3">
 
-var curr_time = new Date();
-console&&console.log("current time:"+ curr_time);
-var showDate="";
-//console.log("垃圾腾讯，瞎写一通，有日期不获取要硬编码到js里,可以直接做减法非要把data转成数字")
+<div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="">阅读 <span id="readNum3">2333</span></div>
 
-var ori_date = document.getElementById("publish_time").innerText;
-//var publish_time = new Date(ori_date + " 0:00+08")
+<span style="" class="media_tool_meta meta_extra meta_praise" id="like3">
+<i class="icon_praise_gray" id = "praise_i"></i><span class="praise_num" id="likeNum3">232</span>
+</span>
 
-var publish_time = new Date("1539705600"*1000);
 
-//console.log("publish date:" + publish_time);
 
-var dis = (curr_time - publish_time) / 1000 / 60 / 60 / 24 ;
-//console.log(dis);
+</div>
 
-if(dis < 1){
-showDate="今天";
-}else if(dis < 2){
-showDate="昨天";
-}else if(dis < 3){
-showDate="前天";
-}else if(dis < 7){
-showDate= Math.floor(dis) + "天前";
-}else if(dis < 10){
-showDate="1周前";
-}else if(publish_time.getFullYear() == curr_time.getFullYear()){
-//showDate = parseInt(publish_time.getMonth()+1) + '月' + parseInt(publish_time.getDate()) + '日';
-showDate = '10月17日';
-}else{
-showDate=publish_time;
-};
+</div>
 
-document.getElementById("publish_time").innerText=showDate;
-
-document.getElementById("publish_time").onclick = function(){
-document.getElementById("publish_time").innerText = ori_date;
-};
-
-document.getElementById("how_long").onclick = function(){
-//var reply_time = new Date("2018-10-17 05:35-04");
-var reply_time = new Date("1539768900" * 1000);
-var dr = (curr_time - reply_time) / 1000 / 60 / 60 / 24 ;
-document.getElementById("how_long").innerText = Math.floor(dr);
-}
-
-function nono()
-{
-document.write("<body><h1>确实没开</h1> 有事请邮箱联系 tdxdxoz@gmail.com<br/></body>");
-
-var s = 3;
-function bl()
-{
-//document.getElementById("ti").innerHTML=s.toFixed(1) + "秒后返回";
-document.write(".");
-s -= 0.04;
-if(s< 0)
-window.location.href=window.location.href+"?rand="+Math.random().toFixed(3);
-else
-setTimeout(bl,40)
-}
-bl();
-}
+<script type="text/javascript">
 
 
 document.getElementById("praise_i").onclick =  function()
 {
-if(document.getElementById('praise_i').className == "icon_praise_gray")
-{
-document.getElementById("praise_i").className += " praised";
-document.getElementById("likeNum3").innerHTML = "233";
-}
-else
-{
-document.getElementById("praise_i").className = "icon_praise_gray";
-document.getElementById("likeNum3").innerHTML = "232";
-}
+    if(document.getElementById('praise_i').className == "icon_praise_gray")
+    {
+        document.getElementById("praise_i").className += " praised";
+        document.getElementById("likeNum3").innerHTML = "233";
+    }
+    else
+    {
+        document.getElementById("praise_i").className = "icon_praise_gray";
+        document.getElementById("likeNum3").innerHTML = "232";
+    }
 }
 </body>
 
