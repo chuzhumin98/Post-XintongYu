@@ -187,9 +187,8 @@ body {
 }
 
 #write{
-    max-width: 860px;
   	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
+  	padding: 20px 20px 20px 20px;
 	padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -354,7 +353,7 @@ ol:last-child {
 }
 blockquote {
     border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
+    padding: 0 0px;
     color: #777777;
 }
 blockquote blockquote {
