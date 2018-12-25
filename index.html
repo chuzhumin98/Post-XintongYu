@@ -390,43 +390,39 @@
 
 <div class="rich_media_tool" id="js_toobar3">
 
-<div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="">阅读 <span id="readNum3">2333</span></div>
+<div id="js_read_area3" class="media_tool_meta tips_global_primary meta_primary" style="">阅读 <span id="readNum3">6666</span></div>
 
 <span style="" class="media_tool_meta meta_extra meta_praise" id="like3">
-<i class="icon_praise_gray" id = "praise_i"></i><span class="praise_num" id="likeNum3">232</span>
+<div  onclick="zan()">
+<i class="icon_praise_gray" id = "praise_i"></i><span class="praise_num" id="likeNum3">2332</span>
+</div>
 </span>
 
-
-
 </div>
 
 </div>
-
+</div>
+</div>
+</div>
+</div>
+</div>
 <script type="text/javascript">
 
-
-document.getElementById("praise_i").onclick =  function()
+function zan()
 {
     if(document.getElementById('praise_i').className == "icon_praise_gray")
     {
         document.getElementById("praise_i").className += " praised";
-        document.getElementById("likeNum3").innerHTML = "233";
+        document.getElementById("likeNum3").innerHTML = "2333";
     }
     else
     {
         document.getElementById("praise_i").className = "icon_praise_gray";
-        document.getElementById("likeNum3").innerHTML = "232";
+        document.getElementById("likeNum3").innerHTML = "2332";
     }
 }
-</body>
 
 </script>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </body>
+
 </html>
